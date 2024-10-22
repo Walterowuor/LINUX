@@ -1,0 +1,60 @@
+To set up workspaces in Recon-ng, it helps to break down the installation process into manageable parts. Here’s a straightforward guide on how to install various marketplace modules in Recon-ng, including workspaces for different functionalities like discovery, import, exploitation, and reporting.
+
+### Step-by-Step Installation of Recon-ng Workspaces
+
+1. **Install Recon-ng**: Ensure that you have Recon-ng installed on your system. If you haven’t done this yet, clone the repository and install it:
+   ```bash
+   git clone https://github.com/lanmaster53/recon-ng.git
+   cd recon-ng
+   pip install -r REQUIREMENTS
+   ```
+
+2. **Launch Recon-ng**: Start the Recon-ng console.
+   ```bash
+   ./recon-ng
+   ```
+
+3. **Set Up Your Workspace**: Create a new workspace or use an existing one.
+   ```bash
+   workspaces create [workspace_name]
+   ```
+
+4. **Install Marketplace Modules**: Use the following commands to install various marketplace modules:
+
+   - **Recon Module**:
+     ```bash
+     marketplace install recon
+     ```
+
+   - **Discovery Module**:
+     ```bash
+     marketplace install discovery
+     ```
+
+   - **Import Module**:
+     ```bash
+     marketplace install import
+     ```
+
+   - **Exploitation Module**:
+     ```bash
+     marketplace install exploitation
+     ```
+
+   - **Reporting Module**:
+     ```bash
+     marketplace install reporting
+     ```
+
+### Tips for Successful Installation
+
+- **Internet Connection**: Ensure you have a stable internet connection, as the marketplace modules are downloaded from the web.
+- **Module Dependencies**: Some modules may require additional dependencies. Be sure to check the module documentation for any special requirements.
+- **Regular Updates**: Keep Recon-ng updated to get the latest modules and features. Use:
+  ```bash
+  git pull
+  ```
+
+### Conclusion
+
+With these steps, installing and managing workspaces in Recon-ng becomes a straightforward task. Understanding each module’s purpose helps in selecting the right tools for your reconnaissance activities. Enjoy exploring the capabilities of Recon-ng!
